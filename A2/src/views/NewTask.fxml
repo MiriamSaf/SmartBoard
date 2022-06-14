@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="339.0" prefWidth="610.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.NewTaskController">
+   <children>
+      <Pane layoutX="-64.0" layoutY="-45.0" prefHeight="271.0" prefWidth="610.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Pane layoutX="119.0" layoutY="76.0" prefHeight="227.0" prefWidth="392.0">
+               <children>
+                  <TextField fx:id="taskNameInp" layoutY="31.0" prefHeight="26.0" prefWidth="392.0" />
+                  <Button fx:id="cancelBtn" layoutX="196.0" layoutY="177.0" mnemonicParsing="false" onAction="#cancelTaskBtn" prefHeight="25.0" prefWidth="67.0" text="Cancel" />
+                  <Text layoutX="127.0" layoutY="87.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Enter task description:">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Text>
+                  <TextField fx:id="taskDescripInp" layoutY="103.0" prefHeight="56.0" prefWidth="392.0" />
+                  <Button fx:id="okayBtn" layoutX="114.0" layoutY="177.0" mnemonicParsing="false" onAction="#CreateTaskBtn" prefHeight="25.0" prefWidth="67.0" text="Okay" />
+                  <Text layoutX="148.0" layoutY="15.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Enter task name:">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Text>
+               </children>
+            </Pane>
+            <Text layoutX="264.0" layoutY="29.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Create New Task">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Text>
+            <Text fx:id="hiddenText" layoutX="3.0" layoutY="60.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="603.4349365234375">
+               <font>
+                  <Font name="System Italic" size="12.0" />
+               </font>
+            </Text>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

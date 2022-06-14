@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="225.0" prefWidth="498.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.NewColumnController">
+   <children>
+      <Pane layoutX="-64.0" layoutY="23.0" prefHeight="225.4" prefWidth="498.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Pane layoutX="53.0" layoutY="61.0">
+               <children>
+                  <TextField fx:id="columnName" layoutY="32.107421875" prefHeight="26.0" prefWidth="392.0" />
+                  <Text layoutX="136.0" layoutY="19.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Enter Column Name:">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Text>
+               </children>
+            </Pane>
+            <Button fx:id="cancelBtn" layoutX="249.0" layoutY="146.0" mnemonicParsing="false" onAction="#cancelBtn" text="Cancel" />
+            <Button fx:id="okayBtn" layoutX="197.0" layoutY="146.0" mnemonicParsing="false" onAction="#CreateColumnBtn" text="Okay" />
+            <Text fx:id="infoText" layoutX="90.0" layoutY="43.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="318.98419189453125" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

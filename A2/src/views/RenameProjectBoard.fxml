@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="279.0" prefWidth="584.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.RenameBoardController">
+   <children>
+      <Pane layoutX="63.0" layoutY="71.0" />
+      <Button fx:id="cancelBtn" layoutX="287.0" layoutY="169.0" mnemonicParsing="false" onAction="#cancelBtn" text="Cancel" />
+      <Button fx:id="okayBtn" layoutX="232.0" layoutY="169.0" mnemonicParsing="false" onAction="#ChangeColName" text="Okay" />
+      <Text fx:id="infoText" layoutX="28.0" layoutY="26.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="546.1842041015625">
+         <font>
+            <Font name="System Italic" size="12.0" />
+         </font>
+      </Text>
+      <TextField fx:id="columnName" layoutX="63.0" layoutY="126.0" prefHeight="26.0" prefWidth="458.0" />
+      <Text layoutX="210.0" layoutY="105.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Enter new board name:" textAlignment="CENTER" wrappingWidth="164.33026123046875">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Text fx:id="hiddenText" layoutX="16.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="546.1842041015623">
+         <font>
+            <Font name="System Italic" size="12.0" />
+         </font></Text>
+   </children>
+</AnchorPane>
